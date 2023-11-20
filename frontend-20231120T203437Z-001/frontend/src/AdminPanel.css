@@ -1,0 +1,56 @@
+.admin-panel {
+    display: flex;
+    background-color: #e9ecee;
+    
+  }
+  
+  .sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar button {
+    background-color: rgb(114, 145, 228);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar button:hover {
+    background-color: #1e268d;
+  }
+  
+  .main-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #333;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+  

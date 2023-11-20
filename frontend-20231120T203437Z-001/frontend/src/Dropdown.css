@@ -1,0 +1,29 @@
+/* Style for the dropdown buttons */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: block;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  /* Hide dropdown content by default */
+  .dropdown-content {
+    display: none;
+  }
+  
+  /* Show dropdown content when its button is clicked */
+  .show {
+    display: block;
+  }
+  

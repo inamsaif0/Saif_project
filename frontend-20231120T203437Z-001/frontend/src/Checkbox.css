@@ -1,0 +1,90 @@
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the checkboxes to wrap to the next line */
+    justify-content: center; /* Center the checkboxes horizontally */
+    align-items: center;
+  }
+  
+  .checkbox-button {
+    position: relative;
+    
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px dashed black;
+    height: 200px;
+    width: 200px;
+  }
+  .checkbox-button2 {
+    position: relative;
+    
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px dashed black;
+    
+    width: 200px;
+  }
+  
+  .checkbox-button input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .checkbox-button2 input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .checkbox-button img {
+    width: 90%;
+    height: 170px;
+    z-index: 0;
+  }
+  
+  .checkbox-button2 img {
+    width: 90%;
+    height: 170px;
+    z-index: 0;
+  }
+  .input-form{
+    text-align: center;
+    width: 80%;
+  }
+  .checkbox-button input[type="checkbox"]:checked + img {
+    opacity: 0.7;
+    background-color:rgb(210, 234, 248);
+    
+  }
+  .checkbox-button2 input[type="checkbox"]:checked + img {
+    opacity: 0.7;
+    background-color:rgb(210, 234, 248);
+    
+  }
+  
+  .button-container {
+    
+    justify-content: center; /* Center the "CONTINUE" button */
+    align-items: center;
+    flex-wrap: wrap; /* Allow the button to wrap to the next line */
+  }
+  
+  /* button {
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  } */
+  
