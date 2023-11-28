@@ -38,7 +38,7 @@ export default function Step1() {
   const err = Validation(values);
   setErrors(err);
   if(err.company === "" && err.companyslogan === ""){
-    axios.post('http://localhost:8081/step1', values)
+    axios.post('http://45.55.45.170:8081/step1', values)
     .then(res => {
       console.log(res,'hello')
       navigate('/step2');
