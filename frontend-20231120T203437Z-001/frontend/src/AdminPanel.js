@@ -27,7 +27,7 @@ function AdminPanel(props) {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/contactus");
+      const response = await axios.get("http://45.55.45.170:8081/contactus");
       setContact(response.data);
       setShowContactData(true);
       setShowStep1Data(false);
@@ -45,7 +45,7 @@ function AdminPanel(props) {
 
   const fetchDat = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/orders");
+      const response = await axios.get("http://45.55.45.170:8081/orders");
       setOrders(response.data);
       setShowOrdersData(true);
       setShowContactData(false); 
@@ -64,7 +64,7 @@ function AdminPanel(props) {
 
   const fetchDa = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/step1");
+      const response = await axios.get("http://45.55.45.170:8081/step1");
       setStep1(response.data);
       setShowStep1Data(true);
       setShowOrdersData(false);
@@ -82,7 +82,7 @@ function AdminPanel(props) {
 
   const fetchdd = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/user_orders");
+      const response = await axios.get("http://45.55.45.170:8081/user_orders");
       setUserOrders(response.data);
       setShowStep1Data(false);
       setShowUserOrders(true);
@@ -100,7 +100,7 @@ function AdminPanel(props) {
 
   const fetchD = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/step2");
+      const response = await axios.get("http://45.55.45.170:8081/step2");
       setStep2(response.data);
       setShowStep1Data(false);
       setShowStep2Data(true);
@@ -119,7 +119,7 @@ function AdminPanel(props) {
 
   const fetch = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/step2_logo");
+      const response = await axios.get("http://45.55.45.170:8081/step2_logo");
       setStep2LogoData(response.data);
       setShowStep1Data(false);
       setShowStep2Data(false);
@@ -138,7 +138,7 @@ function AdminPanel(props) {
 
   const fetc = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/step2_web");
+      const response = await axios.get("http://45.55.45.170:8081/step2_web");
       setStep2WebData(response.data);
       setShowStep1Data(false);
       setShowStep2Data(false);
@@ -157,7 +157,7 @@ function AdminPanel(props) {
 
   const fet = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/step2_video");
+      const response = await axios.get("http://45.55.45.170:8081/step2_video");
       setStep2VideoData(response.data);
       setShowStep1Data(false);
       setShowStep2Data(false);
@@ -176,7 +176,7 @@ function AdminPanel(props) {
 
   const fe = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/step2_mobile");
+      const response = await axios.get("http://45.55.45.170:8081/step2_mobile");
       setStep2MobileData(response.data);
       setShowStep1Data(false);
       setShowStep2Data(false);
@@ -195,7 +195,7 @@ function AdminPanel(props) {
 
   const fett = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/step3");
+      const response = await axios.get("http://45.55.45.170:8081/step3");
       setStep3Data(response.data);
       setShowStep1Data(false);
       setShowStep2Data(false);
