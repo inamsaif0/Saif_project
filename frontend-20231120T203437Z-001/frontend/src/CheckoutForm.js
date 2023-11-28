@@ -26,7 +26,7 @@ export default function Step4() {
   const err = Validation(values);
   setErrors(err);
   if(err.yourname === "" && err.youremail === ""){
-    axios.post('http://localhost:8081/combine', values)
+    axios.post('http://45.55.45.170:8081/combine', values)
     .then(res => {
       navigate('/finalstep');
     })
@@ -35,7 +35,7 @@ export default function Step4() {
   const error = Validation(values);
   setErrors(err);
   if(err.company === "" && err.companyslogan === ""){
-    axios.post('http://localhost:8081/checkout', values)
+    axios.post('http://45.55.45.170:8081/checkout', values)
     .then(res => {
       navigate('/finalstep');
     })
