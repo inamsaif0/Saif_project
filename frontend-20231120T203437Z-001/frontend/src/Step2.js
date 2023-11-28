@@ -23,7 +23,7 @@ function CheckboxPage() {
   const handleContinue = () => {
     if (isAnyCheckboxSelected()) {
       axios
-        .post('http://localhost:8081/step2', { selections })
+        .post('http://45.55.45.170:8081/step2', { selections })
         
         .catch((error) => {
           console.error('API error:', error);
