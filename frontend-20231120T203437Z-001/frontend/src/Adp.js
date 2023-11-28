@@ -11,7 +11,7 @@ function Adp() {
   }, []);
 
   const fetchItems = async () => {
-    const response = await axios.get('http://localhost:8081/items');
+    const response = await axios.get('http://45.55.45.170:8081/items');
     setItems(response.data);
   };
 
@@ -20,7 +20,7 @@ function Adp() {
   };
 
   const handleCreateItem = async () => {
-    await axios.post('http://localhost:8081/items', formData);
+    await axios.post('http://45.55.45.170:8081/items', formData);
     fetchItems();
     setFormData({ name: '', description: '' });
   };
@@ -37,7 +37,7 @@ function Adp() {
   };
 
   const handleUpdateItem = async () => {
-    await axios.put(`http://localhost:8081/items/${editingItem.id}`, formData);
+    await axios.put(`http://45.55.45.170:8081/items/${editingItem.id}`, formData);
     fetchItems();
     setEditingItem(null);
     setFormData({ name: '', description: '' });
@@ -48,7 +48,7 @@ function Adp() {
   
     if (confirmDelete) {
       try {
-        await axios.delete(`http://localhost:8081/items/${id}`);
+        await axios.delete(`http://45.55.45.170:8081/items/${id}`);
         fetchItems();
       } catch (error) {
         console.error('Error deleting item:', error);
