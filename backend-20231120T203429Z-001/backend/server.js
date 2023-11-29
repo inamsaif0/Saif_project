@@ -320,7 +320,7 @@ app.post('/cutom_quote', (req,res)=>{
 
 
 app.post('/step1', (req,res)=>{
-    const sql = "INSERT INTO step1 (`company`,`companyslogan`) VALUES (?)";
+    const sql = "INSERT INTO step1 (`company`,`companyslogan`) VALUES (?,?)";
     const values = [
         req.body.company,
         req.body.companyslogan
