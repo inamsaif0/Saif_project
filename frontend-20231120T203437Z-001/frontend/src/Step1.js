@@ -32,21 +32,35 @@ export default function Step1() {
   const handleInput = (event) =>{
     setValues((prev) => ({...prev, [event.target.name]: event.target.value}));
   }
-  const handleSubmit = (event) => {
+  
+const handleSubmit = async (event) => {
   event.preventDefault();
- 
+
   const err = Validation(values);
   setErrors(err);
-  if(err.company === "" && err.companyslogan === ""){
-    axios.post('http://45.55.45.170:8081/step1', values)
-    .then(res => {
-      console.log(res,'hello')
-      navigate('/step2');
-    })
-    .catch(err => console.log(err));
+
+  if (err.company === "" && err.companyslogan === "") {
+    try {
+      const response = await fetch('http://45.55.45.170:8081/step1', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data, 'hello');
+        navigate('/step2');
+      } else {
+        console.error('Error:', response.status);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
   }
-  
-}
+};
 
 
   return (
